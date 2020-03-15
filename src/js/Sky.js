@@ -1,6 +1,3 @@
-let skyDom = document.getElementsByClassName('sky')[0]
-
-
 class Sky extends Object {
     constructor(xSpeed) {
         super(skyDom.offsetWidth, skyDom.offsetHeight, skyDom.offsetLeft, skyDom.offsetTop, xSpeed, 0, skyDom)
@@ -12,8 +9,3 @@ class Sky extends Object {
         }
     }
 }
-
-let sky = new Sky(-10)
-setInterval(() => {
-    sky.runing(0.5)
-}, 50)

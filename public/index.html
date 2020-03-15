@@ -10,6 +10,8 @@
 
 <body>
     <div class="background">
+        <div class="gameOver">GAME OVER</div>
+        <div class="operation">回车键开始/暂停，空格键跳跃</div>
         <div class="sky"></div>
         <div class="pipeUp"></div>
         <div class="pipeDown"></div>
@@ -17,9 +19,16 @@
         <div class="land"></div>
     </div>
 
-
+    <script src="/src/js/GetDom.js"></script>
     <script src="/src/js/Object.js"></script>
     <script src="/src/js/Sky.js"></script>
+    <script src="/src/js/Land.js"></script>
+    <script src="/src/js/Bird.js"></script>
+    <script src="/src/js/Pipe.js"></script>
+    <script src="/src/js/Game.js"></script>
+    <script>
+        let game = new Game(60)
+    </script>
 </body>
 
 </html>

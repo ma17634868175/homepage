@@ -17,8 +17,13 @@ class Object {
     }
 
     runing(time) {
+        //time秒
         this.xAxis += this.xSpeed * time
         this.yAxis += this.ySpeed * time
+
+        if (this.onRuning) {
+            this.onRuning()
+        }
         this.render()
     }
 }
