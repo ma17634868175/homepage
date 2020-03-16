@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gameOver {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 500;
+  transition: opacity 1s;
+}
+
+.operation {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 111;
+}
+.sky,
+.pipeUp,
+.pipeDown,
+.bird,
+.land {
+  position: absolute;
+}
+.sky {
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url("../assets/sky.png");
+  background-size: 50% 100%;
+  background-position: bottom center;
+}
+.land {
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 180px;
+  background-image: url("../assets/land.png");
+  background-size: 50% 100%;
+  background-position: bottom center;
+}
+.pipeUp {
+  bottom: 180px;
+  right: -60px;
+  width: 60px;
+  height: 300px;
+  background-image: url("../assets/pipeUp.png");
+  background-size: cover;
+  background-position: top;
+}
+.pipeDown {
+  top: 0;
+  right: -60px;
+  width: 60px;
+  height: 200px;
+  background-image: url("../assets/pipeDown.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.bird {
+  top: 300px;
+  left: 200px;
+  width: 52px;
+  height: 45px;
+  background-image: url("../assets/bird.png");
+}
+.bird_fly1 {
+  background-position: 0 center;
+}
+.bird_fly2 {
+  background-position: 52px center;
+}
+.bird_fly3 {
+  background-position: 104px center;
+}
