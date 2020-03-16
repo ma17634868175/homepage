@@ -1,4 +1,10 @@
-class Game {
+import Sky from "./Sky"
+import Land from "./Land"
+import Bird from "./Bird"
+import ProductionPipeDouble from "./Pipe"
+let gameOverCover = document.getElementsByClassName('gameOver')[0]
+
+export default class Game {
     constructor(frame) {
         this.frame = frame //帧数
         this.gameTimer = null

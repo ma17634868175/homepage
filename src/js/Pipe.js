@@ -1,3 +1,9 @@
+import Object from "./Object"
+let background = document.getElementsByClassName('background')[0]
+let skyDom = document.getElementsByClassName('sky')[0]
+let landDom = document.getElementsByClassName('land')[0]
+let pipeUpDom = document.getElementsByClassName('pipeUp')[0]
+
 class Pipe extends Object {
     constructor(height, xAxis, yAxis, xSpeed, dom) {
         super(pipeUpDom.offsetWidth, height, xAxis, yAxis, xSpeed, 0, dom)
@@ -60,7 +66,7 @@ class PipeDouble {
     }
 }
 
-class ProductionPipeDouble {
+export default class ProductionPipeDouble {
     constructor(interval, xSpeed) {
         this.xSpeed = xSpeed
         this.interval = interval

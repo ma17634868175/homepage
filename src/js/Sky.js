@@ -1,4 +1,7 @@
-class Sky extends Object {
+import Object from "./Object"
+let skyDom = document.getElementsByClassName('sky')[0]
+
+export default class Sky extends Object {
     constructor(xSpeed) {
         super(skyDom.offsetWidth, skyDom.offsetHeight, skyDom.offsetLeft, skyDom.offsetTop, xSpeed, 0, skyDom)
     }

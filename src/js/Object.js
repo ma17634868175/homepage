@@ -1,4 +1,4 @@
-class Object {
+export default class Object {
     constructor(width, height, xAxis, yAxis, xSpeed, ySpeed, dom) {
         this.width = width;
         this.height = height;

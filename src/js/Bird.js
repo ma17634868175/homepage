@@ -1,4 +1,9 @@
-class Bird extends Object {
+import Object from "./Object"
+let skyDom = document.getElementsByClassName('sky')[0]
+let landDom = document.getElementsByClassName('land')[0]
+let birdDom = document.getElementsByClassName('bird')[0]
+
+export default class Bird extends Object {
     constructor(ySpeed) {
         super(birdDom.offsetWidth, birdDom.offsetHeight, birdDom.offsetLeft, birdDom.offsetTop, 0, ySpeed, birdDom)
         this.addSpeed = 2000
@@ -20,7 +25,7 @@ class Bird extends Object {
             this.yAxis = contant
         }
     }
-    
+
     // 小鸟跳
     jump(power) {
         this.ySpeed = power
@@ -48,3 +53,5 @@ class Bird extends Object {
         super.runing(time);
     }
 }
+
+
