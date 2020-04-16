@@ -1,12 +1,20 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-15 23:11:50
+ * @LastEditTime: 2020-04-16 15:18:52
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /web-investment/Users/marx/Downloads/GitHub/flappy_bird/public/index.html
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>像素鸟</title>
+    <title id="TITLE">flappy bird</title>
     <link rel="stylesheet" href="./css/index.css">
-</head>
+<link rel="shortcut icon" href="favicon.ico"></head>
 
 <body>
     <div class="background">
@@ -18,6 +26,17 @@
         <div class="bird bird_fly1"></div>
         <div class="land"></div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.js"></script></body>
+<script>
+    const title = document.getElementById("TITLE")
+    document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState == 'hidden') {
+            title.innerText = '大爷快来玩啊~'
+        } else {
+            title.innerText = 'flappy bird'
+        }
+    });
+</script>
 
 </html>
